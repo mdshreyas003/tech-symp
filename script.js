@@ -1,6 +1,13 @@
 
 
-document.getElementById("audio").play();
+document.getElementById("audio");
+
+
+var x  =  document.getElementsByClassName("time");
+
+x[0].addEventListener('mouseover', function(){
+  x[0].classList.toggle("shake-horizontal")
+})
 
 
 (function () {

@@ -1,3 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+
+:root {
+  --clr-bg: hsl(191, 28%, 16%);
+  --clr-neon: hsl(165, 100%, 54%);
+}
+a{
+  overflow: hidden;
+}
+.neon-button {
+  margin-top: 10px;
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100%/0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+  transition: background-color 200ms linear;
+}
+
+.neon-button::before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1.5em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  transition: opacity 100ms linear;
+  z-index: -1;
+  background: var(--clr-neon);
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+}
+
+.neon-button:focus::before,
+.neon-button:hover::before {
+  opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300&display=swap');
 
 
@@ -20,6 +101,10 @@
 }
 .navbar{
   width: 100%;
+  display: flex;
+}
+.navbar .side{
+  color:#62ff93;
 }
 .dkte{
   font-size: 2rem;
@@ -54,7 +139,11 @@ html {
   height: 100%;
   margin: 0;
 }
-
+.navbar li{
+  font-size: 1.5rem;
+  overflow: hidden;
+  margin: 10px;
+}
 body {
   
   background-size: cover;
@@ -73,6 +162,10 @@ body {
   font-size: 5rem;
   font-weight: 700;
 }
+.navbar ul li a{
+  color:#62ff93;
+  text-shadow: rgb(132, 204, 243) 1px 0 10px;
+}
 .container {
   color: #66e795;
   text-shadow: 0 0 20px #1b5a34, 0 0 20px rgba(10, 175, 230, 0);
@@ -86,9 +179,9 @@ h1 {
   text-transform: uppercase;
 }
 
-li {
+.time li {
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.5em;
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
@@ -613,4 +706,66 @@ li span {
 }
 .events .container .card:hover .face.face2 h2 {
   font-size: 2em;
+}
+
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 1s linear reverse backwards;
+	        animation: shake-horizontal 1s linear reverse backwards;
+}
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
 }
