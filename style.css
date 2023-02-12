@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 
@@ -111,17 +110,6 @@ a{
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 0cbc4149f8f33fd663c5da62d0e8b3575f77fb95
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300&display=swap');
 
 
@@ -703,9 +691,9 @@ li span {
   width: 40vw;
   height: 50vh;
   margin: 20px 20px;
-  background: #000;
+  background: #4051b5;
   border-radius: 15px;
-  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px rgba(49, 106, 187, 0.5);
 }
 .events .container .card .face {
   position: absolute;
@@ -735,7 +723,7 @@ li span {
 }
 .events .container .card .face.face2 {
   transition: 0.5s;
-  background-color: #000000;
+  background-color: #e94235;
   border-radius: 15px;
   overflow: hidden;
   height: 10vh;
@@ -745,11 +733,23 @@ li span {
   padding: 0;
   color: #fff;
   transition: 0.5s;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 5px rgba(255, 254, 254, 0.2);
   font-size: 2em;
   z-index: 10;
 }
 
 
 
+@media all and (max-width: 768px) {
+  .events .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .events .container .card{
+    padding: 150px;
+  }
+  
+}
 
