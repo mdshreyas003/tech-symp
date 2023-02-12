@@ -121,7 +121,7 @@ li span {
 #events{
   display: inline;
 }
-/* 
+
 @media all and (max-width: 768px) {
   h1 {
     font-size: calc(1rem * var(--smaller));
@@ -133,11 +133,24 @@ li span {
   li {
     font-size: calc(1.125rem * var(--smaller));
   }
-  
+  .navbar ul li a{
+    font-size: 0.9rem;
+  }
+  #heading .dkte{
+    font-size: 1rem;
+  }
+  .time{
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .time li{
+    font-size: 1rem;
+  }
   li span {
     font-size: calc(1.375rem * var(--smaller));
   }
-} */
+}
 
 
 /* section{

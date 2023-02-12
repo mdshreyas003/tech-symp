@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paradox</title>
+  </head>
+  <body>
+    <div class="main">
+      <p class="dept">
+        Department of CS and CS AI
+      </p>
+      <p class="event">
+        PARADOX
+      </p>
+      <p style="text-align: center;">"Think. Code. Win."</p>
+      <div
+        style="display: flex; flex-wrap: wrap; margin-right: 10px;"
+        class="container"
+      >
+        <div class="rules">
+          <p class="rule-title">
+            Event Details
+          </p>
+          <ul style="font-size: 20px;">
+            <li>This is a group competition</li>
+            <li>The competition will be held in 3 rounds</li>
+            <li>
+              Round Details
+              <ul>
+                <li>Round 1: Aptitude</li>
+                <li>Round 2: Debugging</li>
+                <li>Round 3: Competitive Coding</li>
+              </ul>
+            </li>
+            <li>
+              Languages
+              <ul>
+                <li>Novice : C / C++</li>
+                <li>Expert : C++/ Python/ Java</li>
+              </ul>
+            </li>
+            <li>Entry Fee : Rs. 100 per Person</li>
+          </ul>
+        </div>
+        <div class="rules">
+          <p class="rule-title">Rules</p>
+          <ul style="font-size: 20px;">
+            <li>Maximum 2 Participants are allowed per group</li>
+            <ul>
+              <li>Either both Novice</li>
+              <li>Or both experts</li>
+            </ul>
+            <li>
+              College ID is compulsary (digital format will not be accepted)
+            </li>
+            <li>Final Decisions will be made by the event organisers.</li>
+            <li>
+              Any malpractice shall lead to disqualification of the team.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <button
+          style="
+            font-size: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+          "
+        >
+          Register Now!
+        </button>
+      </div>
+    </div>
+    <style>
+      * {
+        font-family: "Roboto Mono", monospace;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .main {
+        background-color: #141e30e6;
+        color: white;
+        height: 100%;
+      }
+      .dept {
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+        padding: 10px;
+      }
+      .event {
+        text-align: center;
+        background-color: darkgray;
+        color: white;
+        padding: 5px 0;
+        font-size: 50px;
+        margin: 0px;
+      }
+      .rules {
+        justify-content: center;
+        display: grid;
+        flex-basis: 50%;
+      }
+      .rule-title {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      li {
+        width: 440px;
+        word-wrap: break-word;
+      }
+      @media (max-width: 500px) {
+        .container {
+          flex-direction: column;
+        }
+        li {
+          width: 100%;
+        }
+      }
+    </style>
+  </body>
+</html>
