@@ -1,6 +1,6 @@
 
 
-
+document.getElementById("audio").play();
 
 
 (function () {
@@ -41,3 +41,6 @@
     }());
 
 
+
+
+    
