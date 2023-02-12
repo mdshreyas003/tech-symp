@@ -691,13 +691,14 @@ li span {
   width: 40vw;
   height: 50vh;
   margin: 20px 20px;
-  background: #4051b5;
+  background: #00010539;
   border-radius: 15px;
+  font-weight:bold;
   box-shadow: 0 20px 40px rgba(49, 106, 187, 0.5);
 }
 .events .container .card .face {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -723,7 +724,7 @@ li span {
 }
 .events .container .card .face.face2 {
   transition: 0.5s;
-  background-color: #e94235;
+  background-color: #fcf819e3;
   border-radius: 15px;
   overflow: hidden;
   height: 10vh;
