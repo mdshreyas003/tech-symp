@@ -663,15 +663,15 @@ li span {
 .events .container {
   max-width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40vmax, 1fr));
   grid-gap: 35px;
   margin: 0 auto;
   padding: 40px 0;
 }
 .events .container .card {
   position: relative;
-  width: 40vw;
-  height: 45vh;
+  width: 40vmax;
+  height: 45vmax;
   margin: 0 auto;
   background: #000;
   border-radius: 15px;
