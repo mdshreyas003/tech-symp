@@ -6,64 +6,56 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<body style="font-family: 'Roboto Mono', monospace;">
+  </head>
+
+<body>
 
   <audio id="audio" style="display: none;" width="0px" height="0" allow=”autoplay” autoplay="autoplay" src="./bg.mp3">If stream does not start automatically press the play button</audio >
   
     <section id="home">
-    <div class="navbar" >
-      <ul >
-        <li><a style="" href="#home">Home</a></li>
-        <li><a style="" href="#events">Events</a></li>
-        <li><a style="" href="#sponsors">Sponsors</a></li>
-        <li><a style="" href="#developer">Developers</a></li>
-      </ul>
-      <div id="sidebar">
-
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-          <li><a href="#">Link 5</a></li>
-        </ul>
-    
-        <div id="sidebar-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-    
+      <div id="tnavbar" class="fixed w-full z-1000">
+          <header class="text-gray-400 bg-black body-font">
+          <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl ">TECH SYMPOSIUM</span>
+              </a>
+              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+              <a class="mr-5 hover:text-white">HOME</a>
+              <a class="mr-5 hover:text-white">EVENTS</a>
+              <a class="mr-5 hover:text-white">SPONSORS</a>
+              <a class="mr-5 hover:text-white">DEVELOPER TEAM</a>
+              </nav>
+              <!-- <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+              </button> -->
+          </div>
+          </header>
       </div>
-    </div>
-  <div class="container scale-up-center">
-    
-    <h1 id="heading" ><span class="dkte">DKTE Society's
-      Textile and Engineering Institute</span><span class="presents">presents</span><span class="text-flicker-in-glow">Tech symposium 2k23</span></h1>
-    <div class="time shake-horizontal" style="">
-    <h1 id="headline">Starts in</h1>
-    <div id="countdown">
-      <ul>
-        <li style="font-weight: 500; "><span id="days"></span>days</li>
-        <li style="font-weight: 500; "><span id="hours"></span>Hours</li>
-        <li style="font-weight: 500; "><span id="minutes"></span>Minutes</li>
-        <li style="font-weight: 500; "><span id="seconds"></span>Seconds</li>
-      </ul>
-    </div>
-    <div id="content" class="emoji">
-      <span>🚀🚀🚀</span>
-    </div>
-  </div>
-  <div class="bounce-top" id="eventlist">
-    <a href="#events" id="eventref">
-      <img src="./down.svg" alt="" srcset="">
-    </a>
-  </div>
-  </div>
-</div>
-</section>
+      <section>
+          <div id="thero">
+          <section class="text-gray-400 bg-black body-font">
+          <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+              <h1 id="heading" ><span class="dkte sm:text-5xl text-1xl bg-gradient-to-l from-green-300 via-yellow-600 to-green-300 text-transparent  bg-clip-text overflow-hidden">DKTE's</span><span class="presents">presents</span><span class="text-flicker-in-glow font-extrabold text-transparent text-5xl sm:text-8xl bg-clip-text bg-gradient-to-r from-green-900 via-green-200 to-blue-500">Tech symposium 2k23</span></h1>              
+              <div class="text-center lg:w-2/3 w-full">
+              <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white overflow-hidden">Microdosing synth tattooed vexillologist</h1>
+              <p class="leading-relaxed mb-8">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+              <div class="flex justify-center">
+                  <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Button</button>
+                  <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+              </div>
+              </div>
+          </div>
+          </section>
+      </div>
+  </section>
+  </section>
 <section id="events" class="events">
   <div class="container">
 
@@ -151,4 +143,6 @@
     </div>
   </div>
 </section>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFagHCvJjahyNZ6MvRI0u-DDG8aP_6QL59zUDUdcnGE7qpAQ/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 </body>
